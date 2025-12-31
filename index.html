@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Rasmalai 🤍</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+  text-align: center;
+}
+.hidden { display:none; }
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  background: pink;
+  cursor: pointer;
+}
+.balloon {
+  display:inline-block;
+  margin:10px;
+  padding:20px;
+  background:red;
+  border-radius:50%;
+  font-size:22px;
+}
+.gift {
+  display:inline-block;
+  margin:15px;
+  padding:30px;
+  background:gold;
+  border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- STEP 1 -->
+<div id="step1">
+  <h2>This is for my Rasmalai 🤭🤍</h2>
+  <p>Scratch to reveal surprise ✨</p>
+  <button onclick="nextStep()">Scratch Me</button>
+</div>
+
+<!-- STEP 2 -->
+<div id="step2" class="hidden">
+  <h2>Pop the balloons 🎈</h2>
+  <div class="balloon">A</div>
+  <div class="balloon">N</div>
+  <div class="balloon">K</div>
+  <div class="balloon">I</div>
+  <div class="balloon">T</div>
+  <div class="balloon">A</div>
+  <p>💥 Happy New Year 💥</p>
+  <p>
+    You are my favourite notification 💖<br>
+    My comfort person 🤍<br>
+    And my forever smile 😊
+  </p>
+  <button onclick="nextStep2()">Next 🎁</button>
+</div>
+
+<!-- STEP 3 -->
+<div id="step3" class="hidden">
+  <h2>Choose any 3 gifts 🎁</h2>
+
+  <div class="gift">✨ Jhumke ✨</div>
+  <div class="gift">💌 I Love You 💌</div>
+  <div class="gift">💎 Pendant 💎</div>
+
+  <p>Swipe right ➡️</p>
+  <p>
+    Iss saal apne gems ko<br>
+    thoda zyada pyaar kar lena 🤞🤭
+  </p>
+</div>
+
+<script>
+function nextStep(){
+  document.getElementById("step1").style.display="none";
+  document.getElementById("step2").style.display="block";
+}
+function nextStep2(){
+  document.getElementById("step2").style.display="none";
+  document.getElementById("step3").style.display="block";
+}
+</script>
+
+</body>
+  </html>
